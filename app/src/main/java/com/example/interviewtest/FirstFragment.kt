@@ -10,7 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.interviewtest.databinding.FragmentFirstBinding
 
 /**
- * A simple [Fragment] subclass as the default destination in the navigation.
+ * Question: Are there any obvious problems? Possible improvements in this Fragment?.
  */
 class FirstFragment : Fragment() {
 
@@ -27,11 +27,18 @@ class FirstFragment : Fragment() {
 
         _binding = FragmentFirstBinding.inflate(inflater, container, false)
         return binding.root
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val t = view.rootView.findViewById<TextView>(R.id.body_para_two)
+        t.text = "Some random text!!"
+
+        binding.buttonFirst.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+        }
     }
 
     override fun onDestroyView() {
