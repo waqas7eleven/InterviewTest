@@ -10,7 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.interviewtest.databinding.FragmentSecondBinding
 
 /**
- * A simple [Fragment] subclass as the second destination in the navigation.
+ * Question: Add click listener to bottom_box_two which onclick changes the color to R.color.purple_200
  */
 class SecondFragment : Fragment() {
 
@@ -23,7 +23,7 @@ class SecondFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
         _binding = FragmentSecondBinding.inflate(inflater, container, false)
         return binding.root
