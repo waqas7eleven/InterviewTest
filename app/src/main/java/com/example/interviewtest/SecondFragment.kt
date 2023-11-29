@@ -5,12 +5,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.res.ResourcesCompat
-import androidx.navigation.fragment.findNavController
 import com.example.interviewtest.databinding.FragmentSecondBinding
 
 /**
- * Question: Add click listener to bottom_box_two which onclick changes the color to R.color.purple_200
+ * Tasks todo:
+ * Instantiate MainViewModel
+ * Add click listener to change_color_button which invokes changeColor() from MainViewModel
+ * Observe the value of bgColor and apply background color to bottom_box_two
  */
 class SecondFragment : Fragment() {
 

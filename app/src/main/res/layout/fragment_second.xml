@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
 Question: Use the structure below to create the UI similar to provided in the mipmap/question_two_result.png
 Hint: The top box is covering 70% of the screen height and lower boxes are covering 50% width each.
 
@@ -18,7 +17,7 @@ Note: Expectation is to not use the nested layouts for this UI
         android:layout_height="wrap_content"
         android:background="@android:color/holo_green_dark"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/bottom_box_one"
@@ -26,7 +25,7 @@ Note: Expectation is to not use the nested layouts for this UI
         android:layout_height="wrap_content"
         android:background="@android:color/holo_blue_bright"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/bottom_box_two"
@@ -34,7 +33,18 @@ Note: Expectation is to not use the nested layouts for this UI
         android:layout_height="wrap_content"
         android:background="@android:color/darker_gray"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/change_color_button"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:text="Change color"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_box_two"
+        app:layout_constraintEnd_toEndOf="@id/bottom_box_two"
+        app:layout_constraintStart_toStartOf="@id/bottom_box_two"
+        app:layout_constraintTop_toTopOf="@id/bottom_box_two" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
